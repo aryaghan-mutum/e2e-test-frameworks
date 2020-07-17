@@ -1,0 +1,18 @@
+{
+  "name": "selenium-starter-suite-js",
+  "version": "1.0.0",
+  "description": "A General purpose framework comprises functionalities for UI and API services",
+  "main": "index.js",
+  "dependencies": {
+    "selenium-webdriver": "^4.0.0-alpha.7"
+  },
+  "devDependencies": {
+    "jest": "^26.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
