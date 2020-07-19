@@ -1,0 +1,17 @@
+{
+    "httpMethods": {
+        "POST": "POST",
+        "GET": "GET",
+        "DELETE": "DELETE",
+        "PUT": "PUT"
+    },
+    "httpStatus": {
+        "STATUS_200": 200,
+        "STATUS_400": 400,
+        "STATUS_404": 404
+    },
+    "serviceUrls": {
+        "employeeGetUrl": "http://dummy.restapiexample.com/api/v1/employees",
+        "employeesPostUrl": "https://dummy.restapiexample.com/api/v1/create"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "testFiles": "**/*.{spec.ts,spec.js}",
+    "viewportWidth": 1200,
+    "viewportHeight": 720,
+    "defaultCommandTimeout": 10000
+  }
