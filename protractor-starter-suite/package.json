@@ -8,6 +8,9 @@
     "test": "tests"
   },
   "scripts": {
+    "protractor": "node_modules/.bin/protractor",
+    "prepare": "node_modules/.bin/webdriver-manager update",
+    "update": "node_modules/.bin/webdriver-manager update",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
   },
@@ -21,6 +24,7 @@
     "allure-commandline": "^2.13.0",
     "curry": "^1.2.0",
     "jasmine-allure-reporter": "^1.0.2",
+    "protractor": "^7.0.0",
     "protractor-html-reporter-2": "^1.0.4",
     "protractor-jasmine2-screenshot-reporter": "^0.5.0",
     "ramda": "^0.27.0"

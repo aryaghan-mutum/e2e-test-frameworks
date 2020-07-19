@@ -32,7 +32,7 @@ var reporter = new HtmlScreenshotReporter({
 
   // Spec patterns are relative to the current working directory when
   // protractor is called.
-  specs: ['../tests/ui/calculator.js'],
+  specs: ['../tests/ui/*_spec.js'], 
 
   // Options to be passed to Jasmine.
   jasmineNodeOpts: {
