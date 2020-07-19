@@ -6,8 +6,10 @@
     "sourceMap": true,
     "outDir": "./build",
     "strict": true,
+    "moduleResolution": "node",
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
   },
   "include": [
     "tests"
