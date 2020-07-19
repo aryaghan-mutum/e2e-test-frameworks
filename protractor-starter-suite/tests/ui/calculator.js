@@ -1,11 +1,13 @@
-describe('demo calc test', () =>  {
+let homePage = require('../../ui/pages/calculator/calculator_page')
+
+describe('demo calc test', () => {
     it('add test', () => {
-        browser.get('http://juliemr.github.io/protractor-demo/');
-        element(by.model('first')).sendKeys('23');
-        element(by.model('second')).sendKeys('3');
-        element(by.css('[ng-click="doAddition()"]')).click();
-        let result = element(by.cssContainingText('.ng-binding', '26'));
-        expect(result.getText()).toEqual('26');
+        homePage.get('http://juliemr.github.io/protractor-demo/')
+        homePage.enterFirstNumber('4');
+        homePage.enterSecondNumber('3');
+        homePage.clickGo();
+        let result = element(by.cssContainingText('.ng-binding', '7'));
+        expect(result.getText()).toEqual('7');
         browser.sleep(2000);
-    });
-});
+    })
+})
