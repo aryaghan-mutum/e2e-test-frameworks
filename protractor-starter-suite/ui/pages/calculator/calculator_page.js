@@ -8,20 +8,23 @@ const homepage = function() {
      * 
      * @param {*} firstNum 
      */
-    this.enterFirstNumber = function(firstNum) {
+    this.setFirstNumber = function(firstNum) {
         firstNumInput.sendKeys(firstNum);
+        return this;
     };
 
     /**
      * 
      * @param {*} secondNum 
      */
-    this.enterSecondNumber = function(secondNum) {
+    this.setSecondNumber = function(secondNum) {
         secondNumInput.sendKeys(secondNum);
+        return this;
     };
-
+ 
     this.clickGo = function() {
         goBtnCss.click();
+        return this;
     };
 
     /**
