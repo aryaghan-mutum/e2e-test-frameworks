@@ -8,7 +8,7 @@ describe('angularjs homepage', () => {
 });
 
 
-describe('todo list', function () {
+describe('todo list', () => {
     let todoList;
 
     beforeEach(function () {
@@ -16,12 +16,12 @@ describe('todo list', function () {
         todoList = element.all(by.repeater('todo in todoList.todos'));
     });
 
-    it('should list todos', function () {
+    it('should list todos', () => {
         expect(todoList.count()).toEqual(2);
         expect(todoList.get(1).getText()).toEqual('build an AngularJS app');
     });
 
-    it('should add a todo', function () {
+    it('should add a todo', () => {
         const addTodo = element(by.model('todoList.todoText'));
         const addButton = element(by.css('[value="add"]'));
 

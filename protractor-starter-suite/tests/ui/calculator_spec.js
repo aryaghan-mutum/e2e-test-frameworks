@@ -1,13 +1,14 @@
 let homePage = require('../../ui/pages/calculator/calculator_page');
+
 describe('Calculator test', () => {
 
-    beforeEach(async () =>  {
-		await browser.get('http://juliemr.github.io/protractor-demo/');
+    beforeEach(async () => {
+        await browser.get('http://juliemr.github.io/protractor-demo/');
     });
-    
-    it('should test a title', function() {
+
+    it('should test a title', () => {
         expect(browser.getTitle()).toEqual('Super Calculator');
-      });
+    });
 
     it('should test addition of two numbers', () => {
         homePage.setFirstNumber('4').setSecondNumber('3').clickGoBtn();

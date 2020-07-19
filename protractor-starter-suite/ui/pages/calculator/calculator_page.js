@@ -8,7 +8,7 @@ const homepage = function() {
      * 
      * @param {*} firstNum 
      */
-    this.setFirstNumber = function(firstNum) {
+    this.setFirstNumber = (firstNum) => {
         firstNumInput.sendKeys(firstNum);
         return this;
     };
@@ -17,12 +17,12 @@ const homepage = function() {
      * 
      * @param {*} secondNum 
      */
-    this.setSecondNumber = function(secondNum) {
+    this.setSecondNumber = (secondNum) => {
         secondNumInput.sendKeys(secondNum);
         return this;
     };
  
-    this.clickGoBtn = function() {
+    this.clickGoBtn = () => {
         goBtnCss.click();
         return this;
     };
@@ -30,7 +30,7 @@ const homepage = function() {
     /**
      * 
      */
-    this.verifyResult = function() {
+    this.verifyResult = () => {
         const output = element(by.cssContainingText('.ng-binding', result));
         expect(output.getText()).toEqual(result);
     }
