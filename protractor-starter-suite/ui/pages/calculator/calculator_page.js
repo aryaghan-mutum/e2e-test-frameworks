@@ -22,7 +22,7 @@ const homepage = function() {
         return this;
     };
  
-    this.clickGo = function() {
+    this.clickGoBtn = function() {
         goBtnCss.click();
         return this;
     };

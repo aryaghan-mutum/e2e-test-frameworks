@@ -1,10 +1,9 @@
+const angularHomePage = require('../../ui/pages/angular/angular_page');
+
 describe('angularjs homepage', () => {
     it('should greet the named user', () => {
-        browser.get('http://www.angularjs.org');
-        element(by.model('yourName')).sendKeys('Anu');
-        const greeting = element(by.binding('yourName'));
-        expect(greeting.getText()).toEqual('Hello Anu!');
-        browser.sleep(4000);
+        angularHomePage.openPage().setName('Anu');
+        expect(angularHomePage.getGreeting()).toEqual('Hello Anu!');
     });
 });
 

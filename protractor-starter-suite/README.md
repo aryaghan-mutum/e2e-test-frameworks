@@ -39,14 +39,12 @@ allure serve allure-results
 Note: First run the tests, then use allure cmd in CLI to generate the report 
 ```
 
-###### Packages Used
-```properties
-npm i protractor-jasmine2-screenshot-reporter
-npm i -g jasmine-allure-reporter
-npm install -g allure-commandline --save-dev (prerequisites: java 8 or higher)
-npm i protractor-html-reporter-2
-
+###### Start Server
+```properties 
+webdriver-manager update
+webdriver-manager start
 ```
+
 ###### Contributors
 ```properties
 Anurag Muthyam <anu.drumcoder@gmail.com>
