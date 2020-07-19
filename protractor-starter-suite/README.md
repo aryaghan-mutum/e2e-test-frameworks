@@ -23,7 +23,6 @@ Run with node:
 node ./tests/some_test.js
 ```
 
-
 ###### Development
 ```properties
 npm run build
@@ -32,7 +31,23 @@ npm version 0.0.0
 npm view pkg-name versions
 ```
 
+###### Generate Allure Report from Allure cmd line 
+```properties
+protractor ./conf/conf.js
+allure serve allure-results
+
+Note: First run the tests, then use allure cmd in CLI to generate the report 
+```
+
+###### Packages Used
+```properties
+npm i protractor-jasmine2-screenshot-reporter
+npm i -g jasmine-allure-reporter
+npm install -g allure-commandline --save-dev (prerequisites: java 8 or higher)
+npm i protractor-html-reporter-2
+
+```
 ###### Contributors
 ```properties
-Anurag Muthyam
+Anurag Muthyam <anu.drumcoder@gmail.com>
 ```
