@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "author": "Anurag Muthyam <anu.drumcoder@gmail.com>",
   "description": "An Automation Starter Suite using Protractor Framework to validate UI and API services",
-  "main": "index.js",
+  "main": "conf/conf.js",
+  "keywords": [],
+  "license": "ISC",
   "directories": {
     "test": "tests"
   },
@@ -35,7 +37,5 @@
     "ts-loader": "^8.0.1",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7"
-  },
-  "keywords": [],
-  "license": "ISC"
+  }
 }

@@ -39,10 +39,12 @@ allure serve allure-results
 Note: First run the tests, then use allure cmd in CLI to generate the report 
 ```
 
-###### Start Server
+###### Update and Start Server
 ```properties 
 webdriver-manager update
 webdriver-manager start
+
+Notes: The webdriver-manager is a tool to get an instance of a Selenium Server running.
 ```
 
 ###### Contributors

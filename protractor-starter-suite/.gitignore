@@ -5,6 +5,7 @@ allure-results/
 screenshots/
 
 # production
+/build
 
 # misc
 .DS_Store

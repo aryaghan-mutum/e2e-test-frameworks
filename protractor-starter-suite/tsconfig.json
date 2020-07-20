@@ -1,23 +1,19 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./build",
     "target": "es6",
     "module": "commonjs",
     "declaration": true,
     "sourceMap": true,
-    "outDir": "./build",
     "strict": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
   },
-  "include": [
-    "tests"
-  ],
-  "exclude": [
-    "node_modules",
-    "**/__tests__/*"
-  ],
   "printWidth": 120,
   "trailingComma": "all",
   "singleQuote": true

@@ -5,8 +5,8 @@
 /**
  * Screenshot:
  */
-var HtmlScreenshotReporter = require('protractor-jasmine2-screenshot-reporter');
-var reporter = new HtmlScreenshotReporter({
+let HtmlScreenshotReporter = require('protractor-jasmine2-screenshot-reporter');
+let reporter = new HtmlScreenshotReporter({
   reportTitle: "Protractor Automated Tests Summary",
   captureOnlyFailedSpecs: true,
   showSummary: true,
@@ -19,8 +19,11 @@ var reporter = new HtmlScreenshotReporter({
   filename: 'my-report.html'
 });
 
- exports.config = {
+exports.config = {
   directConnect: true,
+
+  // Spec patterns are relative to the current working directory when protractor is called.
+  specs: ['../tests/ui/*_spec.js'],
 
   // Capabilities to be passed to the webdriver instance.
   capabilities: {
@@ -30,27 +33,20 @@ var reporter = new HtmlScreenshotReporter({
   // Framework to use. Jasmine is recommended.
   framework: 'jasmine',
 
-  // Spec patterns are relative to the current working directory when
-  // protractor is called.
-  specs: ['../tests/ui/*_spec.js'], 
-
   // Options to be passed to Jasmine.
   jasmineNodeOpts: {
     defaultTimeoutInterval: 30000
   },
 
   // Setup the report before any tests start
-  beforeLaunch: function() {
-    return new Promise(function(resolve){
+  beforeLaunch: () => {
+    return new Promise(function (resolve) {
       reporter.beforeLaunch(resolve);
     });
   },
 
   // Assign the test reporter to each running instance
-  onPrepare: function() {
-    /**
-     * ALLURE REPORT:
-     */
+  onPrepare: () => {
     jasmine.getEnv().addReporter(reporter);
     var AllureReporter = require('jasmine-allure-reporter');
     jasmine.getEnv().addReporter(new AllureReporter({
@@ -59,11 +55,10 @@ var reporter = new HtmlScreenshotReporter({
   },
 
   // Close the report after all tests finish
-  afterLaunch: function(exitCode) {
-    return new Promise(function(resolve){
+  afterLaunch: (exitCode) => {
+    return new Promise(function (resolve) {
       reporter.afterLaunch(resolve.bind(this, exitCode));
     });
   },
-
 
 };
