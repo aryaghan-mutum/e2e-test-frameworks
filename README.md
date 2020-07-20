@@ -21,7 +21,7 @@ Run tests: npm test
 
 ##### Languages Used
 ```properties
-- JavaScript,
+- JavaScript
 - TypeScript
 ```
 
