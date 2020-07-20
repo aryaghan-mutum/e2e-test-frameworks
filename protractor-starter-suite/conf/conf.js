@@ -40,7 +40,7 @@ exports.config = {
 
   // Setup the report before any tests start
   beforeLaunch: () => {
-    return new Promise(function (resolve) {
+    return new Promise(resolve => {
       reporter.beforeLaunch(resolve);
     });
   },
@@ -56,7 +56,7 @@ exports.config = {
 
   // Close the report after all tests finish
   afterLaunch: (exitCode) => {
-    return new Promise(function (resolve) {
+    return new Promise(resolve => {
       reporter.afterLaunch(resolve.bind(this, exitCode));
     });
   },
