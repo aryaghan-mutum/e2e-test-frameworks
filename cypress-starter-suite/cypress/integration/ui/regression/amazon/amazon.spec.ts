@@ -1,6 +1,6 @@
 import amazonHomePage from '../../../../pages/amazon/amazon_home_page'
 import amazonCartPage from '../../../../pages/amazon/amazon_cart_page'
-const {uiUrl} = require('../../../../fixtures/ui/ui_config.json')
+const { uiUrl } = require('../../../../fixtures/ui/ui_config.json')
 const faker = require('faker')
 
 describe('Amazon Test', () => {

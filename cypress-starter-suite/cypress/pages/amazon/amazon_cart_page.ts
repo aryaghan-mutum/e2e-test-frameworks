@@ -1,4 +1,4 @@
-import {BasePage} from '../base_page'
+import { BasePage } from '../base_page'
 
 /**
  * Page object comprises of locators for web elements of "Amazon Cart" page and methods that manipulate them
@@ -29,7 +29,7 @@ class AmazonCartPage extends BasePage {
      */
     clickCart(): this {
         cy.get(this.cartBtnId).click()
-        return this 
+        return this
     }
 }
 

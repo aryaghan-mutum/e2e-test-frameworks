@@ -1,10 +1,10 @@
 import serviceReq from '../../../restservices/service_request'
 import { asSequence } from 'sequency'
-const {serviceUrls} = require('../../../fixtures/microservices/service_config.json')
-
+const { serviceUrls } = require('../../../fixtures/microservices/service_config.json')
 const { softExpect } = chai
 
 describe('Validate all response fields in Employee Service', () => {
+
     specify('should test employee id type', () => {
         serviceReq.getHttp(serviceUrls.employeeGetUrl).then(response => {
             asSequence(Cypress.$(response.body.data)).forEach(data => {

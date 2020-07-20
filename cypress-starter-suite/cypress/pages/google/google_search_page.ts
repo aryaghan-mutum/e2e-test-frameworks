@@ -25,7 +25,7 @@ class GoogleSearchPage extends BasePage {
      * @remarks - Search in Google
      * @param msg - A product to search
      */
-     serachBy(msg: string): this {
+    serachBy(msg: string): this {
         this.search.type(msg).type('{enter}')
         return this
     }

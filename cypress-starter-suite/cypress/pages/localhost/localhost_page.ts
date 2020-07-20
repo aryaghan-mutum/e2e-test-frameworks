@@ -1,4 +1,4 @@
-import {BasePage} from '../base_page'
+import { BasePage } from '../base_page'
 
 class LocalhostPage extends BasePage {
 
@@ -44,10 +44,10 @@ class LocalhostPage extends BasePage {
         return this
     }
 
-   /**
-    * Set Message
-    * @param message 
-    */
+    /**
+     * Set Message
+     * @param message 
+     */
     setMessage = (message: string): this => {
         cy.get(this.messageTextBoxId)
             .should('be.visible')
