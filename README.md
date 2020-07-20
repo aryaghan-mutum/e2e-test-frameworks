@@ -1,24 +1,24 @@
-# End to End Test Frameworks
+## End to End Test Frameworks
 
 A General purpose framework comprises functionalities for UI and API services using different JavaScript frameworks.
 
-###### Development
+#### Development
 ```properties
-Build a project: npm run build
-Run tests: npm test
 Check node version: node -v
 Check npm version: npm -v
 Check package version: npm view pkg-name versions
+Build a project: npm run build
+Run tests: npm test
 ```
 
-###### List of E2E Frameworks Supported
+#### List of E2E Frameworks Supported
 - [Cypress Starter Suite](https://github.com/aryaghan-mutum/e2e-test-frameworks/tree/master/cypress-starter-suite)
 
 - [Jest Starter Suite](https://github.com/aryaghan-mutum/e2e-test-frameworks/tree/master/jest-starter-suite)
 
 - [Protractor Starter Suite](https://github.com/aryaghan-mutum/e2e-test-frameworks/tree/master/protractor-starter-suite)
 
-###### Contributors
+#### Contributors
 ```properties
 Anurag Muthyam
 ```
