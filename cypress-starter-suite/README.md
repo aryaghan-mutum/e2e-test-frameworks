@@ -1,4 +1,4 @@
-##### Cypress Automation Starter Suite
+##### Cypress Starter Suite
 
 ###### Download `node.js` and `npm`
 - Download `node.js` `.pkg` installer from: `https://nodejs.org/en/download/` & Verify version: `node -v`
