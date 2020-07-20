@@ -1,7 +1,0 @@
-{
-  "inputFiles": [
-    "./cypress/integration"
-  ],
-  "mode": "modules",
-  "out": "docs"
-}

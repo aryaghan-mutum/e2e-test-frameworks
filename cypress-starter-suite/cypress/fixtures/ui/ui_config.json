@@ -1,8 +1,0 @@
-{
-    "uiUrl": {
-        "amazonUrl": "https://amazon.com",
-        "googleUrl": "https://google.com",
-        "facebookUrl": "https://facebook.com",
-        "localhostUrl": "http://localhost:5000"
-    }
-}
