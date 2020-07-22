@@ -1,4 +1,5 @@
 const angularHomePage = require('../../ui/pages/angular/angular_page');
+const brow = require('../../')
 
 describe('angularjs homepage', () => {
     it('should greet the named user', () => {
